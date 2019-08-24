@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template, request
 import RPi.GPIO as G
 import time
-app = Flask(_name_)
+app = Flask(__name__)
 m11=18
 m12=23
 m21=24
@@ -71,6 +71,6 @@ def stop():
     G.output(m22, 0)
     return "true"
 
-if__name__=="__main__"
-print("start")
-app.run(host = "0.0.0.0", port = 5010)
+if __name__ == "__main__":
+    print("start")
+    app.run(host = "0.0.0.0", port = 5010)
