@@ -2,25 +2,7 @@
 <head>
     <script src="https://ajax.googlrapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 </script>
-</head>
-<body>
-
-<img src="http://192.168.86.37:8081"/>
-<div style="float:right">
-
-</div>
-<div style="height:400px; 300px; float:center;">
-<center>
-<h1>
-    <span style="color:#5c5c5c">Circuit</span>
-    <span style="color:#139442">Digest</span></h1>
-        <h2>Surveillance Robot</h2><br><br>
-    <a href="#"id="up" style="font-size:30px;text-decoration:none;"> &#x1F881;<br>Forward</a><br><br></center>
-    <center><a href="#"id="left" style="font-size:30px;text-decoration:none;"> &#x1F880;Left</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#"id="right" style="font-size:30;text-decoration:none;"> Right &#x1F882;</a><br><br></center>
-    <center><a href="#" id="down" style="font-size: 30px;text-decoration:none;"> Backward<br> &#x1F883;</a></center>
-</div>
-<script>
+    <script>
     $( document ).ready (function(){
         $("a#down").on("mousedown", function() {
      $.get('/down_side');
@@ -44,5 +26,24 @@
     });
 });
 </script>
+</head>
+<body>
+
+<img src="http://192.168.86.37:8081"/>
+<div style="float:right">
+
+</div>
+<div style="height:400px; 300px; float:center;">
+<center>
+<h1>
+    <span style="color:#5c5c5c">Circuit</span>
+    <span style="color:#139442">Digest</span></h1>
+        <h2>Surveillance Robot</h2><br><br>
+    <a href="#"id="up" style="font-size:30px;text-decoration:none;"> &#x1F881;<br>Forward</a><br><br></center>
+    <center><a href="#"id="left" style="font-size:30px;text-decoration:none;"> &#x1F880;Left</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"id="right" style="font-size:30;text-decoration:none;"> Right &#x1F882;</a><br><br></center>
+    <center><a href="#" id="down" style="font-size: 30px;text-decoration:none;"> Backward<br> &#x1F883;</a></center>
+</div>
+
         </body>
 </html>
