@@ -22,22 +22,22 @@
 </div>
 <script>
     $( document ).ready (function(){
-        $("#down").on("mousedown", function() {
+        $("a#down").on("mousedown", function() {
      $.get('/down_side');
      }).on('mouseup', function() {
      $.get('/stop');
     });
-    $("#up").on("mousedown", function() {
+    $("a#up").on("mousedown", function() {
      $.get('/up_side');
      }).on('mouseup', function() {
      $.get('/stop');
     });
-    $("#left").on("mousedown", function() {
+    $("a#left").on("mousedown", function() {
      $.get('/left_side');
      }).on('mouseup', function() {
      $.get('/stop');
     });
-    $("#right").on("mousedown", function() {
+    $("a#right").on("mousedown", function() {
      $.get('/right_side');
      }).on('mouseup', function() {
      $.get('/stop');
